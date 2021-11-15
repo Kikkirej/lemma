@@ -5,7 +5,6 @@ package de.fhdo.lemma.data.tests;
 
 import com.google.inject.Inject;
 import de.fhdo.lemma.data.DataModel;
-import de.fhdo.lemma.data.tests.DataDslInjectorProvider;
 import org.eclipse.xtext.testing.InjectWith;
 import org.eclipse.xtext.testing.XtextRunner;
 import org.eclipse.xtext.testing.util.ParseHelper;

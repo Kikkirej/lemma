@@ -69,7 +69,7 @@ public class IntermediateFactoryImpl extends EFactoryImpl implements Intermediat
             case IntermediatePackage.INTERMEDIATE_DATA_OPERATION: return createIntermediateDataOperation();
             case IntermediatePackage.INTERMEDIATE_DATA_OPERATION_RETURN_TYPE: return createIntermediateDataOperationReturnType();
             case IntermediatePackage.INTERMEDIATE_DATA_OPERATION_PARAMETER: return createIntermediateDataOperationParameter();
-            case IntermediatePackage.INTERMEDIATE_LIST_TYPE: return createIntermediateListType();
+            case IntermediatePackage.INTERMEDIATE_COLLECTION_TYPE: return createIntermediateCollectionType();
             case IntermediatePackage.INTERMEDIATE_DATA_FIELD: return createIntermediateDataField();
             case IntermediatePackage.INTERMEDIATE_ENUMERATION: return createIntermediateEnumeration();
             case IntermediatePackage.INTERMEDIATE_ENUMERATION_FIELD: return createIntermediateEnumerationField();
@@ -120,7 +120,6 @@ public class IntermediateFactoryImpl extends EFactoryImpl implements Intermediat
      * <!-- end-user-doc -->
      * @generated
      */
-    @Override
     public IntermediateDataModel createIntermediateDataModel() {
         IntermediateDataModelImpl intermediateDataModel = new IntermediateDataModelImpl();
         return intermediateDataModel;
@@ -131,7 +130,6 @@ public class IntermediateFactoryImpl extends EFactoryImpl implements Intermediat
      * <!-- end-user-doc -->
      * @generated
      */
-    @Override
     public IntermediateImport createIntermediateImport() {
         IntermediateImportImpl intermediateImport = new IntermediateImportImpl();
         return intermediateImport;
@@ -142,7 +140,6 @@ public class IntermediateFactoryImpl extends EFactoryImpl implements Intermediat
      * <!-- end-user-doc -->
      * @generated
      */
-    @Override
     public IntermediateVersion createIntermediateVersion() {
         IntermediateVersionImpl intermediateVersion = new IntermediateVersionImpl();
         return intermediateVersion;
@@ -153,7 +150,6 @@ public class IntermediateFactoryImpl extends EFactoryImpl implements Intermediat
      * <!-- end-user-doc -->
      * @generated
      */
-    @Override
     public IntermediateContext createIntermediateContext() {
         IntermediateContextImpl intermediateContext = new IntermediateContextImpl();
         return intermediateContext;
@@ -164,7 +160,6 @@ public class IntermediateFactoryImpl extends EFactoryImpl implements Intermediat
      * <!-- end-user-doc -->
      * @generated
      */
-    @Override
     public IntermediatePrimitiveType createIntermediatePrimitiveType() {
         IntermediatePrimitiveTypeImpl intermediatePrimitiveType = new IntermediatePrimitiveTypeImpl();
         return intermediatePrimitiveType;
@@ -175,7 +170,6 @@ public class IntermediateFactoryImpl extends EFactoryImpl implements Intermediat
      * <!-- end-user-doc -->
      * @generated
      */
-    @Override
     public IntermediateComplexType createIntermediateComplexType() {
         IntermediateComplexTypeImpl intermediateComplexType = new IntermediateComplexTypeImpl();
         return intermediateComplexType;
@@ -186,7 +180,6 @@ public class IntermediateFactoryImpl extends EFactoryImpl implements Intermediat
      * <!-- end-user-doc -->
      * @generated
      */
-    @Override
     public IntermediateImportedComplexType createIntermediateImportedComplexType() {
         IntermediateImportedComplexTypeImpl intermediateImportedComplexType = new IntermediateImportedComplexTypeImpl();
         return intermediateImportedComplexType;
@@ -197,7 +190,6 @@ public class IntermediateFactoryImpl extends EFactoryImpl implements Intermediat
      * <!-- end-user-doc -->
      * @generated
      */
-    @Override
     public IntermediateImportedTechnologySpecificType createIntermediateImportedTechnologySpecificType() {
         IntermediateImportedTechnologySpecificTypeImpl intermediateImportedTechnologySpecificType = new IntermediateImportedTechnologySpecificTypeImpl();
         return intermediateImportedTechnologySpecificType;
@@ -208,7 +200,6 @@ public class IntermediateFactoryImpl extends EFactoryImpl implements Intermediat
      * <!-- end-user-doc -->
      * @generated
      */
-    @Override
     public IntermediateDataStructure createIntermediateDataStructure() {
         IntermediateDataStructureImpl intermediateDataStructure = new IntermediateDataStructureImpl();
         return intermediateDataStructure;
@@ -219,7 +210,6 @@ public class IntermediateFactoryImpl extends EFactoryImpl implements Intermediat
      * <!-- end-user-doc -->
      * @generated
      */
-    @Override
     public IntermediateDataOperation createIntermediateDataOperation() {
         IntermediateDataOperationImpl intermediateDataOperation = new IntermediateDataOperationImpl();
         return intermediateDataOperation;
@@ -230,7 +220,6 @@ public class IntermediateFactoryImpl extends EFactoryImpl implements Intermediat
      * <!-- end-user-doc -->
      * @generated
      */
-    @Override
     public IntermediateDataOperationReturnType createIntermediateDataOperationReturnType() {
         IntermediateDataOperationReturnTypeImpl intermediateDataOperationReturnType = new IntermediateDataOperationReturnTypeImpl();
         return intermediateDataOperationReturnType;
@@ -241,7 +230,6 @@ public class IntermediateFactoryImpl extends EFactoryImpl implements Intermediat
      * <!-- end-user-doc -->
      * @generated
      */
-    @Override
     public IntermediateDataOperationParameter createIntermediateDataOperationParameter() {
         IntermediateDataOperationParameterImpl intermediateDataOperationParameter = new IntermediateDataOperationParameterImpl();
         return intermediateDataOperationParameter;
@@ -252,10 +240,9 @@ public class IntermediateFactoryImpl extends EFactoryImpl implements Intermediat
      * <!-- end-user-doc -->
      * @generated
      */
-    @Override
-    public IntermediateListType createIntermediateListType() {
-        IntermediateListTypeImpl intermediateListType = new IntermediateListTypeImpl();
-        return intermediateListType;
+    public IntermediateCollectionType createIntermediateCollectionType() {
+        IntermediateCollectionTypeImpl intermediateCollectionType = new IntermediateCollectionTypeImpl();
+        return intermediateCollectionType;
     }
 
     /**
@@ -263,7 +250,6 @@ public class IntermediateFactoryImpl extends EFactoryImpl implements Intermediat
      * <!-- end-user-doc -->
      * @generated
      */
-    @Override
     public IntermediateDataField createIntermediateDataField() {
         IntermediateDataFieldImpl intermediateDataField = new IntermediateDataFieldImpl();
         return intermediateDataField;
@@ -274,7 +260,6 @@ public class IntermediateFactoryImpl extends EFactoryImpl implements Intermediat
      * <!-- end-user-doc -->
      * @generated
      */
-    @Override
     public IntermediateEnumeration createIntermediateEnumeration() {
         IntermediateEnumerationImpl intermediateEnumeration = new IntermediateEnumerationImpl();
         return intermediateEnumeration;
@@ -285,7 +270,6 @@ public class IntermediateFactoryImpl extends EFactoryImpl implements Intermediat
      * <!-- end-user-doc -->
      * @generated
      */
-    @Override
     public IntermediateEnumerationField createIntermediateEnumerationField() {
         IntermediateEnumerationFieldImpl intermediateEnumerationField = new IntermediateEnumerationFieldImpl();
         return intermediateEnumerationField;
@@ -296,7 +280,6 @@ public class IntermediateFactoryImpl extends EFactoryImpl implements Intermediat
      * <!-- end-user-doc -->
      * @generated
      */
-    @Override
     public IntermediateImportedAspect createIntermediateImportedAspect() {
         IntermediateImportedAspectImpl intermediateImportedAspect = new IntermediateImportedAspectImpl();
         return intermediateImportedAspect;
@@ -307,7 +290,6 @@ public class IntermediateFactoryImpl extends EFactoryImpl implements Intermediat
      * <!-- end-user-doc -->
      * @generated
      */
-    @Override
     public IntermediateAspectProperty createIntermediateAspectProperty() {
         IntermediateAspectPropertyImpl intermediateAspectProperty = new IntermediateAspectPropertyImpl();
         return intermediateAspectProperty;
@@ -318,7 +300,6 @@ public class IntermediateFactoryImpl extends EFactoryImpl implements Intermediat
      * <!-- end-user-doc -->
      * @generated
      */
-    @Override
     public IntermediateAspectPropertyValue createIntermediateAspectPropertyValue() {
         IntermediateAspectPropertyValueImpl intermediateAspectPropertyValue = new IntermediateAspectPropertyValueImpl();
         return intermediateAspectPropertyValue;
@@ -369,7 +350,6 @@ public class IntermediateFactoryImpl extends EFactoryImpl implements Intermediat
      * <!-- end-user-doc -->
      * @generated
      */
-    @Override
     public IntermediatePackage getIntermediatePackage() {
         return (IntermediatePackage)getEPackage();
     }

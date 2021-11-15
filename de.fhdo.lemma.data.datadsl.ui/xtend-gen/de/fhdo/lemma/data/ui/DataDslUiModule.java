@@ -45,7 +45,7 @@ public class DataDslUiModule extends AbstractDataDslUiModule {
     return HighlightingCalculator.class;
   }
   
-  public DataDslUiModule(final AbstractUIPlugin plugin) {
-    super(plugin);
+  public DataDslUiModule(final AbstractUIPlugin arg0) {
+    super(arg0);
   }
 }

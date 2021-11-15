@@ -9,14 +9,14 @@ context customerManagementBackend {
         string city
     }
 
-    list AddressDtos { AddressDto d }
+    collection AddressDtos { AddressDto d }
 
     structure CustomerDto<valueObject> {
         string customerId,
         CustomerProfileDto customerProfile
     }
 
-    list CustomerDtos { CustomerDto d }
+    collection CustomerDtos { CustomerDto d }
 
     structure CustomerProfileDto<valueObject> {
         string firstname,
@@ -65,7 +65,7 @@ context customerManagementBackend {
         function int getNumberOfUnacknowledgedInteractions
     }
 
-    list InteractionEntities { InteractionEntity i }
+    collection InteractionEntities { InteractionEntity i }
 
     structure InteractionLogService<domainService> {
         hide InteractionLogRepository interactionLogRepository,
@@ -78,7 +78,7 @@ context customerManagementBackend {
         immutable int count
     }
 
-    list Notifications { Notification n }
+    collection Notifications { Notification n }
 
     structure InteractionAcknowledgementDto<valueObject> {
         string lastAcknowledgedInteractionId<neverEmpty>
@@ -90,7 +90,7 @@ context customerManagementBackend {
         int count
     }
 
-    list NotificationDtos { NotificationDto d }
+    collection NotificationDtos { NotificationDto d }
 
     structure InteractionLogRepository<repository> {
         InteractionLogAggregateRoot interactionLogAggregate,

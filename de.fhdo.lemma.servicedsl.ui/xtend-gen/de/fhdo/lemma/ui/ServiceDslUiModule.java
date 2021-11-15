@@ -6,7 +6,6 @@ package de.fhdo.lemma.ui;
 import de.fhdo.lemma.eclipse.ui.editor.LiveValidationCapableXtextEditor;
 import de.fhdo.lemma.eclipse.ui.editor.LiveValidationXtextDocumentProvider;
 import de.fhdo.lemma.eclipse.ui.editor.server.ServerConnection;
-import de.fhdo.lemma.ui.AbstractServiceDslUiModule;
 import de.fhdo.lemma.ui.autoedit.ServiceDslAutoEditStrategyProvider;
 import de.fhdo.lemma.ui.highlighting.HighlightingCalculator;
 import de.fhdo.lemma.ui.highlighting.HighlightingConfiguration;
@@ -52,7 +51,7 @@ public class ServiceDslUiModule extends AbstractServiceDslUiModule {
     return ServiceDslAutoEditStrategyProvider.class;
   }
   
-  public ServiceDslUiModule(final AbstractUIPlugin plugin) {
-    super(plugin);
+  public ServiceDslUiModule(final AbstractUIPlugin arg0) {
+    super(arg0);
   }
 }

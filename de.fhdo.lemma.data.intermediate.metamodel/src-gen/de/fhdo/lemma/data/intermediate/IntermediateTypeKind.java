@@ -43,14 +43,14 @@ public enum IntermediateTypeKind implements Enumerator {
     ENUMERATION(0, "ENUMERATION", "ENUMERATION"),
 
     /**
-     * The '<em><b>LIST</b></em>' literal object.
+     * The '<em><b>COLLECTION</b></em>' literal object.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #LIST_VALUE
+     * @see #COLLECTION_VALUE
      * @generated
      * @ordered
      */
-    LIST(0, "LIST", "LIST"),
+    COLLECTION(0, "COLLECTION", "COLLECTION"),
 
     /**
      * The '<em><b>PRIMITIVE</b></em>' literal object.
@@ -95,15 +95,15 @@ public enum IntermediateTypeKind implements Enumerator {
     public static final int ENUMERATION_VALUE = 0;
 
     /**
-     * The '<em><b>LIST</b></em>' literal value.
+     * The '<em><b>COLLECTION</b></em>' literal value.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-     * @see #LIST
+     * @see #COLLECTION
      * @model
      * @generated
      * @ordered
      */
-    public static final int LIST_VALUE = 0;
+    public static final int COLLECTION_VALUE = 0;
 
     /**
      * The '<em><b>PRIMITIVE</b></em>' literal value.
@@ -137,7 +137,7 @@ public enum IntermediateTypeKind implements Enumerator {
         new IntermediateTypeKind[] {
             DUMMY_FOR_XMI_SERIALIZER_BUG,
             ENUMERATION,
-            LIST,
+            COLLECTION,
             PRIMITIVE,
             STRUCTURE,
         };
@@ -239,7 +239,6 @@ public enum IntermediateTypeKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    @Override
     public int getValue() {
       return value;
     }
@@ -249,7 +248,6 @@ public enum IntermediateTypeKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    @Override
     public String getName() {
       return name;
     }
@@ -259,7 +257,6 @@ public enum IntermediateTypeKind implements Enumerator {
      * <!-- end-user-doc -->
      * @generated
      */
-    @Override
     public String getLiteral() {
       return literal;
     }
